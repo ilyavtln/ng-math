@@ -3,10 +3,10 @@ name: Deploy Angular Project
 on:
   push:
     branches:
-      - release
+      - gh-pages
   pull_request:
     branches:
-      - release
+      - gh-pages
 
 jobs:
   deploy:
@@ -36,18 +36,3 @@ jobs:
         run: ng deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-  display-deployment-link:
-    runs-on: ubuntu-latest
-    needs: deploy
-
-    steps:
-      - name: Create summary file with deployment link
-        run: |
-          echo "Website deployed! Visit it at https://ilyavtln.github.io/test-gh-pages" > deployment-summary.txt
-
-      - name: Upload summary file as artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: deployment-summary
-          path: deployment-summary.txt
