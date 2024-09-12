@@ -102,6 +102,14 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "buildTarget": "ng-math:build:production",
+            "repo": "https://github.com/ilyavtln/ng-math.git",
+            "baseHref": "/ng-math/"
+          }
         }
       }
     }
