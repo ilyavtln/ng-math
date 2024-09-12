@@ -41,6 +41,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
             github_token: ${{ secrets.GITHUB_TOKEN }}
-            publish_dir: ./dist/ng-math
+            publish_dir: ./dist/ng-math/browser
             user_name: 'ilyavtln'
             user_email: 'owtf086@gmail.com'
