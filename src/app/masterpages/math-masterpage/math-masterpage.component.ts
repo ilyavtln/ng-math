@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-math-masterpage',
+  selector: 'math-masterpage',
   templateUrl: './math-masterpage.component.html',
   styleUrl: './math-masterpage.component.scss'
 })
