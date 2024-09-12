@@ -3,10 +3,10 @@ name: Deploy Angular Project
 on:
   push:
     branches:
-      - gh-pages
+      - master
   pull_request:
     branches:
-      - gh-pages
+      - master
 
 jobs:
   deploy:
