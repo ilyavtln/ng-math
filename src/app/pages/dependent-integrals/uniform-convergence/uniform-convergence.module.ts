@@ -25,10 +25,6 @@ const ROUTES: Routes = [
 @NgModule({
   declarations: [
     UniformConvergenceComponent,
-    LevelDirective
-  ],
-  exports: [
-    LevelDirective
   ],
   imports: [
     CommonModule,
