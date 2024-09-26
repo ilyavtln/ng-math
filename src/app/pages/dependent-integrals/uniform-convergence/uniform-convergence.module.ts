@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { UniformConvergenceComponent } from './uniform-convergence.component';
 import {RouterModule, Routes} from "@angular/router";
-import {DependentIntegralsComponent} from "@pages/dependent-integrals/dependent-integrals.component";
 import {LevelDirective} from "../../../directives/level/level.directive";
 
 const ROUTES: Routes = [
@@ -25,6 +24,7 @@ const ROUTES: Routes = [
 @NgModule({
   declarations: [
     UniformConvergenceComponent,
+    LevelDirective
   ],
   imports: [
     CommonModule,
