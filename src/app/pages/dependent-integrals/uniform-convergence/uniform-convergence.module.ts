@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { UniformConvergenceComponent } from './uniform-convergence.component';
 import {RouterModule, Routes} from "@angular/router";
-import {MathDirectiveModule} from "../../../directives/math-directive.module";
+import {LevelDirectiveModule} from "../../../directives/level/level-directive.module";
 
 const ROUTES: Routes = [
   {
@@ -28,7 +28,7 @@ const ROUTES: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(ROUTES),
-    MathDirectiveModule
+    LevelDirectiveModule
   ]
 })
 export class UniformConvergenceModule { }

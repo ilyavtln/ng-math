@@ -4,8 +4,7 @@ import { BasicComponent } from './basic.component';
 import {RouterModule, Routes} from "@angular/router";
 import {IntroductionModule} from "@pages/dependent-integrals/components/introduction/introduction.module";
 import {MathjaxModule} from "mathjax-angular";
-import {LevelDirective} from "../../../../directives/level/level.directive";
-import {MathDirectiveModule} from "../../../../directives/math-directive.module";
+import {LevelDirectiveModule} from "../../../../directives/level/level-directive.module";
 
 const ROUTES: Routes = [
   {
@@ -23,7 +22,7 @@ const ROUTES: Routes = [
     RouterModule.forChild(ROUTES),
     IntroductionModule,
     MathjaxModule,
-    MathDirectiveModule
+    LevelDirectiveModule
   ]
 })
 export class BasicModule { }

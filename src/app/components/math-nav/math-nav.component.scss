@@ -3,6 +3,8 @@
   flex-direction: column;
   justify-content: space-between;
   max-height: 100vh;
+  width: fit-content;
+  overflow-y: auto;
   -webkit-backdrop-filter: blur(16px);
   backdrop-filter: blur(16px);
   background-color: cadetblue;
@@ -16,6 +18,7 @@
   border-block-end: 1px solid black;
 
   &__submenu {
+    width: fit-content;
     background-color:rgb(83, 158, 204);
   }
 
