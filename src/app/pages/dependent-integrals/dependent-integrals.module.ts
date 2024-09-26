@@ -20,6 +20,16 @@ const ROUTES: Routes = [
     loadChildren: () => import('@pages/dependent-integrals/uniform-convergence/uniform-convergence.module').then(m => m.UniformConvergenceModule),
   },
   {
+    path: 'proper-integrals',
+    data: { breadcrumb: 'Собственные интегралы' },
+    loadChildren: () => import('@pages/dependent-integrals/proper-integrals/proper-integrals.module').then(m => m.ProperIntegralsModule),
+  },
+  {
+    path: 'improper-integrals',
+    data: { breadcrumb: 'Несобственные интегралы' },
+    loadChildren: () => import('@pages/dependent-integrals/improper-integrals/improper-integrals.module').then(m => m.ImproperIntegralsModule),
+  },
+  {
     path: 'literature',
     data: { breadcrumb: 'Литература' },
     loadChildren: () => import('@pages/dependent-integrals/literature/literature.module').then(m => m.LiteratureModule),
@@ -33,7 +43,7 @@ const ROUTES: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(ROUTES),
-    MathjaxModule
+    MathjaxModule,
   ]
 })
 export class DependentIntegralsModule { }

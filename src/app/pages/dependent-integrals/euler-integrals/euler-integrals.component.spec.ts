@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PropertiesComponent } from './properties.component';
+import { EulerIntegralsComponent } from './euler-integrals.component';
 
-describe('PropertiesComponent', () => {
-  let component: PropertiesComponent;
-  let fixture: ComponentFixture<PropertiesComponent>;
+describe('EulerIntegralsComponent', () => {
+  let component: EulerIntegralsComponent;
+  let fixture: ComponentFixture<EulerIntegralsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [PropertiesComponent]
+      declarations: [EulerIntegralsComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(PropertiesComponent);
+    fixture = TestBed.createComponent(EulerIntegralsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

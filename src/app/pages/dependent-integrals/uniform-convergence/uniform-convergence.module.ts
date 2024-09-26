@@ -27,6 +27,9 @@ const ROUTES: Routes = [
     UniformConvergenceComponent,
     LevelDirective
   ],
+  exports: [
+    LevelDirective
+  ],
   imports: [
     CommonModule,
     RouterModule.forChild(ROUTES),
