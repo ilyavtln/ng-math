@@ -3,24 +3,19 @@
   flex-direction: column;
   justify-content: space-between;
   max-height: 100vh;
-  width: fit-content;
-  overflow-y: auto;
+  width: 160px;
+  overflow: auto;
   -webkit-backdrop-filter: blur(16px);
   backdrop-filter: blur(16px);
-  background-color: cadetblue;
+  background-color: color-mix(in srgb, #fff 70%, transparent);
   z-index: 250;
   position: relative;
   transition: background-color .3s ease, border-color .3s ease;
-  height: 100vh;
+  height: 100dvh;
   padding-block-start: 1rem;
   padding-block-end: 2rem;
   box-sizing: border-box;
-  border-block-end: 1px solid black;
-
-  &__submenu {
-    width: fit-content;
-    background-color:rgb(83, 158, 204);
-  }
+  border-block-end: 1px solid oklch(97.12% .002 325.59);
 
   &__panel {
     display: flex;
@@ -34,12 +29,13 @@
     margin: 0;
     list-style: none;
     display: flex;
+    align-items: center;
     flex-direction: column;
 
     &-item {
       color: black;
       position: relative;
-      width: 6.875rem;
+      width: 100%;
 
       &_link {
         display: flex;
@@ -58,9 +54,9 @@
           content: "";
           position: absolute;
           bottom: 0;
-          top: 0;
-          left: 0;
-          width: 2px;
+          left: 0; /* Размещаем полосу слева */
+          height: 100%; /* Устанавливаем высоту полосы на 100% */
+          width: 2px; /* Ширина полосы */
           background-color: black;
           opacity: 0;
           transform: scale(.9);
@@ -69,6 +65,86 @@
         }
 
         &-active {
+          font-weight: 500;
+
+          &::before {
+            opacity: 1;
+            transform: scaleY(1);
+          }
+        }
+      }
+    }
+  }
+}
+
+.math-nav__submenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 100vh;
+  width: 200px;
+  overflow: auto;
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  background-color: color-mix(in srgb, #fff 70%, transparent);
+  z-index: 250;
+  position: relative;
+  transition: background-color .3s ease, border-color .3s ease;
+  height: 100dvh;
+  padding-block-start: 1rem;
+  padding-block-end: 2rem;
+  box-sizing: border-box;
+  border-block-end: 1px solid oklch(97.12% .002 325.59);
+  border-left: 1px solid #e3e3e3;
+
+  &__panel {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%; /* Добавьте это, чтобы панель занимала всю ширину родительского элемента */
+  }
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &-item {
+      color: black;
+      position: relative;
+      width: 100%;
+
+      &_link {
+        display: flex;
+        flex-direction: column;
+        gap: .75rem;
+        padding-block: 1.25rem;
+        text-decoration: none;
+        fill: rebeccapurple;
+        color: inherit;
+        cursor: pointer;
+        transition: fill .3s ease;
+
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0; /* Размещаем полосу слева */
+          height: 100%; /* Устанавливаем высоту полосы на 100% */
+          width: 2px; /* Ширина полосы */
+          background: linear-gradient(0deg, #8514F5FF 0%, #F637E3FF 100%);
+          opacity: 0;
+          transform: scale(.9);
+          transform-origin: center;
+          transition: opacity .3s ease, transform .3s ease;
+        }
+
+        &-active {
+          color: oklch(69.02% .277 332.77);
+
           &::before {
             opacity: 1;
             transform: scaleY(1);

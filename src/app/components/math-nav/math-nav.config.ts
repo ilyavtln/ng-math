@@ -10,7 +10,7 @@ export const MAIN_MENU: INavmenuItem[] = [
     href: '/dependent-integrals/basic'
   },
   {
-    title: 'Равномерная сходимость',
+    title: 'Равномерная <br> сходимость',
     href: '/dependent-integrals/uniform-convergence',
     subMenu: [
       {
@@ -24,7 +24,7 @@ export const MAIN_MENU: INavmenuItem[] = [
     ]
   },
   {
-    title: 'Зависящие интегралы',
+    title: 'Зависящие <br> интегралы',
     href: '/dependent-integrals/proper-integrals',
     subMenu: [
       {
@@ -37,19 +37,19 @@ export const MAIN_MENU: INavmenuItem[] = [
       },
       {
         title: 'Интегралы Эйлера',
-        href: '/dependent-integrals/uniform-convergence/properties'
+        href: '/dependent-integrals/euler-integrals'
       },
       {
         title: 'Технологии вычисления',
-        href: '/dependent-integrals/uniform-convergence/properties'
+        href: '/dependent-integrals/calculation-methods'
       },
       {
-        title: 'Применение для вычисления',
-        href: '/dependent-integrals/uniform-convergence/properties'
+        title: 'Применение',
+        href: '/dependent-integrals/application'
       },
       {
         title: 'Приложение',
-        href: '/dependent-integrals/uniform-convergence/properties'
+        href: '/dependent-integrals/prilo'
       },
     ]
   },
