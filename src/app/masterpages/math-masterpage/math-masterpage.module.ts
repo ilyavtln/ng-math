@@ -4,6 +4,7 @@ import { MathMasterpageComponent } from './math-masterpage.component';
 import { RouterModule } from "@angular/router";
 import {NavigationModule} from "../../core/common-ui/navigation/navigation.module";
 import {FooterModule} from "../../core/common-ui/footer/footer.module";
+import {BreadcrumbsModule} from "../../core/breadcrumbs/breadcrumbs.module";
 
 
 
@@ -16,7 +17,8 @@ import {FooterModule} from "../../core/common-ui/footer/footer.module";
     CommonModule,
     RouterModule,
     NavigationModule,
-    FooterModule
+    FooterModule,
+    BreadcrumbsModule
   ]
 })
 export class MathMasterpageModule { }

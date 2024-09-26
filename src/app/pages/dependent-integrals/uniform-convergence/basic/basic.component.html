@@ -1,0 +1,22 @@
+<section class="page-section">
+  <div class="container">
+    <math-introduction></math-introduction>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="bg-light p-3 rounded-4">
+      <p>
+        Пусть функция <mathjax>{{ content.MATH_FUNC }}</mathjax> определена на множестве <mathjax>{{ content.MATH_X_MULTY }}</mathjax> <mathjax>{{ content.MATH_GAMMA }}</mathjax> и <mathjax>{{ content.MATH_X0 }}</mathjax> – некоторая предельная точка множества <mathjax>{{ content.MATH_X }}</mathjax>.
+      </p>
+      <p>
+        Функция <mathjax>{{ content.MATH_FUNC }}</mathjax> при <mathjax>{{ content.MATH_X_TO_X0 }}</mathjax> стремится к предельной функции <mathjax>{{ content.MATH_PHI }}</mathjax> равномерно относительно <mathjax>{{ content.MATH_GAMMA_SMALL }}</mathjax> в области <mathjax>{{ content.MATH_GAMMA }}</mathjax>, если
+      </p>
+      <ol>
+        <li [mathjax]="content.MATH_LIM_1"></li>
+        <li [mathjax]="content.MATH_LIM_2"></li>
+      </ol>
+    </div>
+  </div>
+</section>

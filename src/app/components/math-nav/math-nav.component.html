@@ -1,0 +1,61 @@
+<div class="math-nav__panel">
+  <nav class="math-nav">
+    <button class="d-md-none">Закрыть</button>
+    <ul class="math-nav__list">
+      <ng-container *ngFor="let item of content.MAIN_MENU; let i = index">
+        <li class="math-nav__list-item">
+          @if (!item.subMenu) {
+            <a
+              class="math-nav__list-item_link"
+              [routerLink]="item.href"
+              routerLinkActive="math-nav__list-item_link-active" [routerLinkActiveOptions]="{exact: true}"
+              (click)="closeSubMenu()">
+              {{ item.title }}
+            </a>
+          }
+          @else {
+            <a
+              class="math-nav__list-item_link"
+              [routerLink]="item.href"
+              (click)="showSubMenu(i, item)"
+              [ngClass]="{'math-nav__list-item_link-active': isActive(i)}">
+              {{ item.title }}
+            </a>
+          }
+        </li>
+      </ng-container>
+    </ul>
+    <div class="math-nav__bottom">
+      <ul class="navbar-nav d-flex flex-row gap-3 gap-md-4 gap-lg-5">
+        <li class="nav-item d-flex flex-column align-items-center">
+          <label class="nav-link active text-nowrap me-3 d-none d-md-block" for="level">Выберите уровень</label>
+          <select id="level" class="form-select">
+            <option class='select-easy' value="easy">Начальный</option>
+            <option class='select-normal' value="normal">Базовый</option>
+            <option class='select-hard' value="hard">Продвинутый</option>
+          </select>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  @if (activeSubMenu) {
+    <nav class="math-nav math-nav__submenu">
+      <button class="d-md-none">Закрыть</button>
+      <ul class="math-nav__list">
+        <ng-container *ngFor="let subItem of activeSubMenu.subMenu">
+          <li class="math-nav__list-item">
+            <a class="math-nav__list-item_link"
+              [routerLink]="subItem.href"
+              routerLinkActive="math-nav__list-item_link-active"
+              [routerLinkActiveOptions]="{exact: true}">
+              {{ subItem.title }}
+            </a>
+          </li>
+        </ng-container>
+      </ul>
+      <div class="math-nav__bottom">
+        <a routerLink="/">Внизу</a>
+      </div>
+    </nav>
+  }
+</div>

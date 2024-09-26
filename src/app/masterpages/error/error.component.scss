@@ -1,0 +1,120 @@
+@import "src/styles/mixins/_breakpoints.scss";
+
+.w-error {
+  width: 95%;
+
+  @include media-breakpoint-up(md) {
+    width: 90%;
+  }
+
+  @include media-breakpoint-up(lg) {
+    height: 80%;
+  }
+}
+
+.rshb-error {
+  width: 100%;
+  height: calc(100vh - 56px);;
+  background: var(--dark-gray);
+  color: var(--light-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  @include media-breakpoint-up(md) {
+    height: calc(100vh - 48px);
+  }
+
+  @include media-breakpoint-up(lg) {
+    height: calc(100vh - 56px);
+  }
+
+  &__content {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+    &_logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      grid-area: 1 / 1 / 2 / 4;
+      margin-bottom: 1rem;
+
+      img {
+        width: 150px;
+        transition: transform 0.3s;
+      }
+
+      img:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    &_main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &-left {
+        grid-area: 2 / 1 / 4 / 2;
+        font-size: 2rem;
+
+        p:first-child {
+          font-size: 5rem;
+          font-weight: bold;
+          color: var(--light-color);
+        }
+
+        p:last-child {
+          margin-top: 1rem;
+          font-size: 1.5rem;
+          color: var(--light-color);
+        }
+      }
+
+      &-right {
+        grid-area: 2 / 2 / 4 / 4;
+        display: flex;
+        justify-content: center;
+
+        img {
+          width: 100%;
+          max-width: 300px;
+          transition: transform 0.3s;
+        }
+
+        img:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+
+    &-bottom {
+      grid-area: 4 / 1 / 5 / 4;
+      margin-top: 2rem;
+
+      .btn-light {
+        padding: 0.75rem 2rem;
+        background: var(--light-color);
+        color: var(--dark-gray);
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background 0.3s, color 0.3s;
+
+        &:hover {
+          background: var(--dark-gray);
+          color: var(--light-color);
+          border: 2px solid var(--light-color);
+        }
+      }
+    }
+  }
+}

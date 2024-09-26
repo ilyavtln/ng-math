@@ -1,0 +1,24 @@
+.breadcrumb {
+  background: none;
+  font-size: .8em;
+  margin: 0;
+  a, span {
+    color: darkgrey;
+    cursor: pointer;
+  }
+  a:hover, span:hover {
+    color: dimgrey;
+    text-decoration: none;
+  }
+  li{
+    list-style: none;
+    float: left;
+  }
+  li::after {
+    content: '>';
+    color: darkgrey;
+  }
+  li:last-child::after {
+    content: ''
+  }
+}

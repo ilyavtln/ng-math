@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @use "variables";
+@use "mixins/breakpoints";
 
 a {
   text-decoration: none !important;
@@ -15,4 +16,8 @@ body {
 
 html, body {
   height: 100%;
+}
+
+.page-section {
+  margin-top: 2rem;
 }
