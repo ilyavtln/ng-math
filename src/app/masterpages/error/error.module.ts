@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ErrorComponent } from './error.component';
 import {NavigationModule} from "../../core/common-ui/navigation/navigation.module";
 import {RouterModule, Routes} from "@angular/router";
+import {FooterModule} from "../../core/common-ui/footer/footer.module";
 
 const ROUTES: Routes = [
   {
@@ -19,7 +20,8 @@ const ROUTES: Routes = [
   imports: [
     CommonModule,
     NavigationModule,
-    RouterModule.forChild(ROUTES)
+    RouterModule.forChild(ROUTES),
+    FooterModule
   ]
 })
 export class ErrorModule { }

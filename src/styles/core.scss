@@ -9,6 +9,10 @@ body {
 a {
   text-decoration: none !important;
   color: var(--primary-blue) !important;
+
+  &:hover {
+    color: var(--primary-blue-hover) !important;
+  }
 }
 
 h2 {

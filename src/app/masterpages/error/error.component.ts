@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'rshb-error',
+  selector: 'math-error',
   templateUrl: './error.component.html',
   styleUrl: './error.component.scss'
 })
