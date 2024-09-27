@@ -16,7 +16,7 @@
       <ng-content></ng-content>
 
       @if (data.anchors) {
-        <div class="hero-banner__content-anchors mt-5">
+        <div class="hero-banner__content-anchors mt-3 mt-md-5">
           @for (anchor of data.anchors; track anchor.href) {
             <a class="my-btn my-btn-primary"
               [routerLink]="anchor.href"
