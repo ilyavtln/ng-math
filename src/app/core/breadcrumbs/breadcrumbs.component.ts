@@ -14,6 +14,7 @@ interface IBreadCrumb {
 })
 
 export class BreadcrumbsComponent implements OnInit {
+  isHomePage: boolean = false;
   public breadcrumbs: IBreadCrumb[];
 
   constructor(
@@ -24,6 +25,8 @@ export class BreadcrumbsComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.checkIfHomePage();
+
     this.router.events.pipe(
       filter((event: RouterEvent) => event instanceof NavigationEnd), // Используем тип RouterEvent вместо Event
       distinctUntilChanged(),
@@ -32,12 +35,10 @@ export class BreadcrumbsComponent implements OnInit {
     });
   }
 
-  /**
-   * Recursively build breadcrumb according to activated route.
-   * @param route
-   * @param url
-   * @param breadcrumbs
-   */
+  checkIfHomePage(): void {
+    this.isHomePage = this.router.url === '/'; // Предполагается, что главная страница имеет путь '/'
+  }
+
   buildBreadCrumb(route: ActivatedRoute, url: string = '', breadcrumbs: IBreadCrumb[] = []): IBreadCrumb[] {
     // Проверяем наличие routeConfig и data, чтобы избежать ошибок
     let label = route.routeConfig && route.routeConfig.data ? route.routeConfig.data['breadcrumb'] : '';

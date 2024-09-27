@@ -1,0 +1,18 @@
+@mixin button($color-name) {
+  // Генерация классов для кнопок
+  .btn-#{$color-name} {
+    background-color: var(--#{$color-name}) !important; // Основной цвет фона
+
+    &:hover {
+      background-color: darken(var(--#{$color-name}), 10%) !important; // Увеличиваем яркость цвета на 10%
+    }
+
+    &:active {
+      background-color: darken(var(--#{$color-name}), 20%) !important; // Увеличиваем яркость цвета на 20%
+    }
+
+    &:focus {
+      outline: 2px solid darken(var(--#{$color-name}), 15%) !important; // Цвет рамки при фокусе
+    }
+  }
+}

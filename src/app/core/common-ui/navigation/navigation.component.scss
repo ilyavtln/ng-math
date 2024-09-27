@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  justify-content: space-between; // Раздвигает элементы на краях
+  align-items: center; // Центрирует элементы по вертикали
+}
+
+.nav-logo {
+  height: 2rem; // Устанавливаем желаемую высоту для изображения
+  width: auto; // Ширина будет пропорциональна высоте
+}
+
+.nav-list {
+  list-style: none; // Убирает стандартные маркеры списка
+  padding: 0; // Убирает отступы
+  margin: 0; // Убирает внешние отступы
+
+  .nav-item {
+    .nav-link {
+      text-decoration: none; // Убирает подчеркивание
+      color: var(--primary-blue) !important; // Цвет текста
+      border-radius: 0.25rem; // Закругление углов
+      transition: background-color 0.3s; // Плавный переход
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.1) !important;
+        color: var(--primary-blue-hover) !important;
+      }
+    }
+  }
+}

@@ -42,6 +42,9 @@ export const LIGHT_THEME = {
   "primary-gray-active": "#BDBDBD",
   "primary-gray": "#E3E3E3",
 
+  // Темно-серый
+  "primary-dark-gray": "#232323",
+
   // Желтый
   "primary-yellow-secondary": "#FFF5CC",
   "primary-yellow-focus": "#FFEFAA",
@@ -64,5 +67,8 @@ export const LIGHT_THEME = {
   "primary-dark-green-border": "#94D49B",
   "primary-dark-green-hover": "#4EB858",
   "primary-dark-green-active": "#238E2E",
-  "primary-dark-green": "#2AAA37"
+  "primary-dark-green": "#2AAA37",
+
+  // Дополнительно
+  "footer": "#F6F6F6"
 };

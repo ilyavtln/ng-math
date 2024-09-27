@@ -3,7 +3,7 @@ export const DARK_THEME = {
   "primary-black": "#ffffff",
 
   // Фиолетовый
-  "primary-purple-secondary": "#EFEFFF",
+  "primary-purple-secondary": "#6060ff",
   "primary-purple-focus": "#D2B6D9",
   "primary-purple-border": "#BB92C6",
   "primary-purple-hover": "#8E49A0",
@@ -24,7 +24,7 @@ export const DARK_THEME = {
   "primary-blue-border": "#96C7E8",
   "primary-blue-hover": "#51A2D9",
   "primary-blue-active": "#2678AE",
-  "primary-blue": "#64b1e8",
+  "primary-blue": "#DEF1FF",
 
   // Оранжевый
   "primary-orange-secondary": "#FBE1D1",
@@ -41,6 +41,9 @@ export const DARK_THEME = {
   "primary-gray-hover": "#E8E8E8",
   "primary-gray-active": "#BDBDBD",
   "primary-gray": "#E3E3E3",
+
+  // Темно-серый
+  "primary-dark-gray": "#656565",
 
   // Желтый
   "primary-yellow-secondary": "#FFF5CC",
@@ -64,5 +67,8 @@ export const DARK_THEME = {
   "primary-dark-green-border": "#94D49B",
   "primary-dark-green-hover": "#4EB858",
   "primary-dark-green-active": "#238E2E",
-  "primary-dark-green": "#2AAA37"
+  "primary-dark-green": "#2AAA37",
+
+  // Дополнительно
+  "footer": "#F6F6F6"
 };

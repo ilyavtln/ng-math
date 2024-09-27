@@ -1,0 +1,32 @@
+@import "src/styles/mixins/_breakpoints.scss";
+
+.hero-banner {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &-chips {
+
+    }
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: fit-content;
+
+      @include media-breakpoint-up(lg) {
+        max-width: 70%;
+      }
+    }
+  }
+}

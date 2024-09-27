@@ -1,3 +1,5 @@
+@import 'mixins/button';
+
 // Определение карты цветов
 $colors: (
   "primary-white": #ffffff,
@@ -43,6 +45,9 @@ $colors: (
   "primary-gray-active": #BDBDBD,
   "primary-gray": #E3E3E3,
 
+  // Темно-серый
+  "primary-dark-gray": #232323,
+
   // Желтый
   "primary-yellow-secondary": #FFF5CC,
   "primary-yellow-focus": #FFEFAA,
@@ -65,9 +70,10 @@ $colors: (
   "primary-dark-green-border": #94D49B,
   "primary-dark-green-hover": #4EB858,
   "primary-dark-green-active": #238E2E,
-  "primary-dark-green": #2AAA37
+  "primary-dark-green": #2AAA37,
 
   // Дополнительно
+  "footer": #F6F6F6
 ) !default;
 
 :root {
@@ -85,4 +91,21 @@ $colors: (
   .text-#{$name} {
     color: var(--#{$name}); // Используйте CSS-переменные
   }
+}
+
+$button-states: (
+  "hover": 0.1, // Увеличиваем яркость цвета на 10%
+  "active": 0.2, // Увеличиваем яркость цвета на 20%
+  "focus": 0.1 // Увеличиваем яркость цвета на 10%
+);
+
+// Функция для затемнения цвета
+@function darken($color, $amount) {
+  @return rgba($color, 1 - $amount);
+}
+
+
+// Генерация классов для каждой кнопки
+@each $name, $value in $colors {
+  @include button($name);
 }

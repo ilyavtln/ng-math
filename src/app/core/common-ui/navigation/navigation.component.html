@@ -1,8 +1,18 @@
-<ul class="d-flex gap-3">
-  <li class="nav-item">
-    <a routerLink="/dependent-integrals">Зависящие интегралы</a>
-  </li>
-  <li class="nav-item">
-    <a href="#">Инструкция</a>
-  </li>
-</ul>
+<div class="container-fluid py-2 bg-primary-purple-secondary">
+  <div class="container">
+    <nav class="navbar">
+      <ul class="nav-list d-flex gap-3 align-items-center">
+        <li class="nav-item">
+          <a routerLink="/" class="nav-link"><img src="/favicon.ico" class="nav-logo"></a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/dependent-integrals" class="nav-link">Зависящие интегралы</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Инструкция</a>
+        </li>
+      </ul>
+      <math-theme-toggler></math-theme-toggler>
+    </nav>
+  </div>
+</div>

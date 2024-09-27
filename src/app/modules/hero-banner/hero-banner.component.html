@@ -1,0 +1,35 @@
+<div class="hero-banner">
+  <div class="hero-banner__container">
+    <div class="hero-banner__content">
+      @if (data.badges) {
+        <math-chip [chip]="data.badges"></math-chip>
+      }
+
+      @if (data.title) {
+        <h1 class="hero-banner__content-title mb-3" [innerHTML]="data.title"></h1>
+      }
+
+      @if (data.description) {
+        <div class="hero-banner__content-description" [innerHTML]="data.description"></div>
+      }
+
+      <ng-content></ng-content>
+
+      @if (data.anchors) {
+        <div class="hero-banner__content-anchors mt-5">
+          @for (anchor of data.anchors; track anchor.href) {
+            <a class="btn btn-secondary"
+              [routerLink]="anchor.href"
+              [fragment]="anchor.fragment"
+              [queryParams]="anchor.params">
+              {{ anchor.title}}
+            </a>
+          }
+        </div>
+      }
+    </div>
+    <div class="hero-banner__image">
+      <img class="w-100" src="/image.png" [alt]="data.image.title">
+    </div>
+  </div>
+</div>
