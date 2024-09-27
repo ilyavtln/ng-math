@@ -1,0 +1,20 @@
+@use "variables";
+
+body {
+  font-family: "Montserrat", sans-serif !important;
+  color: var(--primary-black) !important;
+  background: var(--primary-gray-secondary) !important;
+}
+
+a {
+  text-decoration: none !important;
+  color: var(--primary-blue) !important;
+}
+
+h2 {
+  font-weight: 600 !important;
+}
+
+html, body {
+  height: 100%;
+}

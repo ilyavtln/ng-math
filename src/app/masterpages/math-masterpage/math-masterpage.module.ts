@@ -5,6 +5,7 @@ import { RouterModule } from "@angular/router";
 import {NavigationModule} from "../../core/common-ui/navigation/navigation.module";
 import {FooterModule} from "../../core/common-ui/footer/footer.module";
 import {BreadcrumbsModule} from "../../core/breadcrumbs/breadcrumbs.module";
+import {ThemeTogglerModule} from "../../core/theme-toggler/theme-toggler.module";
 
 
 
@@ -18,7 +19,8 @@ import {BreadcrumbsModule} from "../../core/breadcrumbs/breadcrumbs.module";
     RouterModule,
     NavigationModule,
     FooterModule,
-    BreadcrumbsModule
+    BreadcrumbsModule,
+    ThemeTogglerModule
   ]
 })
 export class MathMasterpageModule { }

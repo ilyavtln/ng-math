@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MathNavComponent } from './math-nav.component';
 import { RouterModule } from '@angular/router';
+import {ThemeTogglerModule} from "../../core/theme-toggler/theme-toggler.module";
 
 
 
@@ -11,7 +12,8 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    ThemeTogglerModule
   ],
   exports: [
     MathNavComponent

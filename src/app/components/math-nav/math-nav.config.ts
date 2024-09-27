@@ -10,7 +10,7 @@ export const MAIN_MENU: INavmenuItem[] = [
     href: '/dependent-integrals/basic'
   },
   {
-    title: 'Равномерная <br> сходимость',
+    title: 'Сходимость',
     href: '/dependent-integrals/uniform-convergence',
     subMenu: [
       {
@@ -24,7 +24,7 @@ export const MAIN_MENU: INavmenuItem[] = [
     ]
   },
   {
-    title: 'Зависящие <br> интегралы',
+    title: 'Зависящие',
     href: '/dependent-integrals/proper-integrals',
     subMenu: [
       {

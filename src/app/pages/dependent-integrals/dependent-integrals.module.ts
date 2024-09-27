@@ -30,6 +30,11 @@ const ROUTES: Routes = [
     loadChildren: () => import('@pages/dependent-integrals/improper-integrals/improper-integrals.module').then(m => m.ImproperIntegralsModule),
   },
   {
+    path: 'euler-integrals',
+    data: { breadcrumb: 'Интегралы Эйлера' },
+    loadChildren: () => import('@pages/dependent-integrals/euler-integrals/euler-integrals.module').then(m => m.EulerIntegralsModule),
+  },
+  {
     path: 'literature',
     data: { breadcrumb: 'Литература' },
     loadChildren: () => import('@pages/dependent-integrals/literature/literature.module').then(m => m.LiteratureModule),
