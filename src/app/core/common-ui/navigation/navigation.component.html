@@ -1,18 +1,24 @@
 <div class="container-fluid py-2 bg-primary-purple-secondary">
   <div class="container">
-    <nav class="navbar">
+    <nav class="navbar d-none d-md-flex">
       <ul class="nav-list d-flex gap-3 align-items-center">
         <li class="nav-item">
-          <a routerLink="/" class="nav-link"><img src="favicon.ico" class="nav-logo"></a>
+          <a routerLink="/"><img src="favicon.ico" class="nav-logo" alt=""></a>
         </li>
-        <li class="nav-item">
-          <a routerLink="/dependent-integrals" class="nav-link">Зависящие интегралы</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">Инструкция</a>
-        </li>
+        <ng-container *ngFor="let item of config; let i = index">
+          <li class="nav-item">
+            <a [routerLink]="item.anchor.href" class="nav-link" [innerHTML]="item.title"></a>
+          </li>
+        </ng-container>
       </ul>
       <math-theme-toggler></math-theme-toggler>
+    </nav>
+
+    <nav class="d-md-none">
+      <div class="d-flex justify-content-between">
+        <a routerLink="/"><img src="favicon.ico" class="nav-logo" alt=""></a>
+        <math-theme-toggler></math-theme-toggler>
+      </div>
     </nav>
   </div>
 </div>

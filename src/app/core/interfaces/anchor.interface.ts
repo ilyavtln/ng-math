@@ -1,7 +1,7 @@
 import {Params} from "@angular/router";
 
 export interface IAnchor {
-  title: string;
+  title?: string;
 
   href: string;
 
