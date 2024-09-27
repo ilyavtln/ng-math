@@ -35,7 +35,7 @@
     }
 
     img {
-      height: fit-content;
+      width: fit-content;
 
       @include media-breakpoint-up(lg) {
         max-width: 70%;
