@@ -1,0 +1,29 @@
+<div class="course-banner p-3 p-lg-4 rounded-4 h-100" [ngClass]=" 'bg-' + data.color">
+  <div class="d-flex flex-column justify-content-between h-100">
+    <div>
+      <div class="course-banner__image mb-2">
+        <img [src]="data.image?.href" [alt]="data.image?.title">
+      </div>
+
+      <div class="course-banner__title mb-2" [innerHTML]="data.title"></div>
+
+      <div class="mb-4">
+        <div>Длительность: <b>{{ data.duration }} часов</b></div>
+        <div>Тем: <b>{{data.themes }} штук</b></div>
+      </div>
+    </div>
+    <div class="course-banner__anchor">
+      @for (anchor of data.anchors; track anchor.href) {
+        <div class="d-flex gap-2">
+          <a class="my-text-btn"
+             [routerLink]="anchor.href"
+             [fragment]="anchor.fragment"
+             [queryParams]="anchor.params">
+            {{ anchor.title}}
+          </a>
+          <img src="default-icons/arrow-right.svg">
+        </div>
+      }
+    </div>
+  </div>
+</div>

@@ -7,7 +7,7 @@
   overflow: auto;
   -webkit-backdrop-filter: blur(16px);
   backdrop-filter: blur(16px);
-  background-color: color-mix(in srgb, #fff 70%, transparent);
+  background-color: var(--navigation);
   z-index: 250;
   position: relative;
   transition: background-color .3s ease, border-color .3s ease;
@@ -15,7 +15,6 @@
   padding-block-start: 1rem;
   padding-block-end: 2rem;
   box-sizing: border-box;
-  border-block-end: 1px solid oklch(97.12% .002 325.59);
 
   &__panel {
     display: flex;
@@ -57,7 +56,7 @@
           left: 0; /* Размещаем полосу слева */
           height: 100%; /* Устанавливаем высоту полосы на 100% */
           width: 2px; /* Ширина полосы */
-          background-color: black;
+          background-color: var(--navigation-dark);
           opacity: 0;
           transform: scale(.9);
           transform-origin: center;
@@ -86,7 +85,7 @@
   overflow: auto;
   -webkit-backdrop-filter: blur(16px);
   backdrop-filter: blur(16px);
-  background-color: color-mix(in srgb, #fff 70%, transparent);
+  background-color: var(--navigation);
   z-index: 250;
   position: relative;
   transition: background-color .3s ease, border-color .3s ease;
@@ -94,8 +93,7 @@
   padding-block-start: 1rem;
   padding-block-end: 2rem;
   box-sizing: border-box;
-  border-block-end: 1px solid oklch(97.12% .002 325.59);
-  border-left: 1px solid #e3e3e3;
+  border-left: 1px solid var(--navigation-border);
 
   &__panel {
     display: flex;

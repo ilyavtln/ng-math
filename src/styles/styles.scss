@@ -1,4 +1,5 @@
 @use "core";
+@use "base-styles";
 @use "mixins/breakpoints";
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
@@ -39,4 +40,34 @@ $ng-math-theme: mat.define-theme((
 
 .page-section {
   margin-top: 2rem;
+}
+
+.my-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  padding: 0 1rem;
+  border-radius: 1rem;
+  white-space: nowrap;
+  box-sizing: border-box;
+  text-align: center;
+  border: 1px solid transparent;
+  transition: all .3s, outline .05s;
+  color: var(--primary-white);
+  background-color: var(--primary-blue);
+  cursor: pointer;
+}
+
+.my-btn-primary {
+  background-color: var(--primary-blue);
+  color: var(--primary-white) !important;
+  border-color: transparent;
+}
+
+.my-text-btn {
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 1.25rem;
+  color: var(--primary-purple) !important;
 }

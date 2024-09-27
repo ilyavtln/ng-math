@@ -1,14 +1,14 @@
 export const DARK_THEME = {
-  "primary-white": "#313131",
+  "primary-white": "#171717",
   "primary-black": "#ffffff",
 
   // Фиолетовый
   "primary-purple-secondary": "#6060ff",
   "primary-purple-focus": "#D2B6D9",
   "primary-purple-border": "#BB92C6",
-  "primary-purple-hover": "#8E49A0",
+  "primary-purple-hover": "#BB92C6",
   "primary-purple-active": "#641F76",
-  "primary-purple": "#78258D",
+  "primary-purple": "#d087e3",
 
   // Красный
   "primary-red-secondary": "#FFEFEF",
@@ -19,7 +19,7 @@ export const DARK_THEME = {
   "primary-red": "#E42125",
 
   // Голубой
-  "primary-blue-secondary": "#DEF1FF",
+  "primary-blue-secondary": "#004479",
   "primary-blue-focus": "#B9DAF0",
   "primary-blue-border": "#96C7E8",
   "primary-blue-hover": "#51A2D9",
@@ -35,7 +35,7 @@ export const DARK_THEME = {
   "primary-orange": "#EC671A",
 
   // Серый
-  "primary-gray-secondary": "#363d4e",
+  "primary-gray-secondary": "#25272d",
   "primary-gray-focus": "#F6F6F6",
   "primary-gray-border": "#F1F1F1",
   "primary-gray-hover": "#E8E8E8",
@@ -43,10 +43,10 @@ export const DARK_THEME = {
   "primary-gray": "#E3E3E3",
 
   // Темно-серый
-  "primary-dark-gray": "#656565",
+  "primary-dark-gray": "#000000",
 
   // Желтый
-  "primary-yellow-secondary": "#FFF5CC",
+  "primary-yellow-secondary": "#D4AC00",
   "primary-yellow-focus": "#FFEFAA",
   "primary-yellow-border": "#FEE680",
   "primary-yellow-hover": "#FED62B",
@@ -62,7 +62,7 @@ export const DARK_THEME = {
   "primary-green": "#21E434",
 
   // Темно-зеленый
-  "primary-dark-green-secondary": "#D4EED7",
+  "primary-dark-green-secondary": "#238E2E",
   "primary-dark-green-focus": "#B8E3BC",
   "primary-dark-green-border": "#94D49B",
   "primary-dark-green-hover": "#4EB858",
@@ -70,5 +70,8 @@ export const DARK_THEME = {
   "primary-dark-green": "#2AAA37",
 
   // Дополнительно
-  "footer": "#F6F6F6"
+  "footer": "#F6F6F6",
+  "navigation": "#0f0f11",
+  "navigation-dark": '#ffffff',
+  "navigation-border": '#212121',
 };

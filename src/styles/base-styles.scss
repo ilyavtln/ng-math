@@ -1,0 +1,11 @@
+@import "mixins/breakpoints";
+
+.banner-wrapper {
+  &__two {
+    grid-template-columns: 1fr;
+
+    @include media-breakpoint-up(md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

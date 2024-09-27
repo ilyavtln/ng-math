@@ -19,6 +19,11 @@ const MATH_ROUTES: Routes = [
         path: 'about',
         data: { breadcrumb: 'О проекте' },
         loadChildren: () => import('@pages/about/about.module').then(m => m.AboutModule)
+      },
+      {
+        path: 'features',
+        data: { breadcrumb: 'Разработка' },
+        loadChildren: () => import('@pages/features/features.module').then(m => m.FeaturesModule)
       }
     ]
   },

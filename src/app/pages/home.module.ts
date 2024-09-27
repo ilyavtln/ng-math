@@ -5,9 +5,13 @@ import {RouterModule, Routes} from "@angular/router";
 import {FormulaDirective} from "../directives/formula/formula.directive";
 import {ReactiveFormsModule} from "@angular/forms";
 import {HeroBannerModule} from "../modules/hero-banner/hero-banner.module";
+import {CourseBannerModule} from "../modules/course-banner/course-banner.module";
 
 const ROUTES: Routes = [
-  { path: '', component: HomeComponent },
+  {
+    path: '',
+    component: HomeComponent
+  },
 ]
 
 @NgModule({
@@ -21,7 +25,8 @@ const ROUTES: Routes = [
     JsonPipe,
     RouterModule.forChild(ROUTES),
     ReactiveFormsModule,
-    HeroBannerModule
+    HeroBannerModule,
+    CourseBannerModule
   ]
 })
 export class HomeModule { }

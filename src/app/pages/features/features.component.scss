@@ -1,0 +1,11 @@
+@import "src/styles/mixins/_breakpoints.scss";
+
+.feature {
+  &__container {
+    grid-template-columns: 1fr;
+
+    @include  media-breakpoint-up(lg) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}

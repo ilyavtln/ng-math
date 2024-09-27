@@ -6,10 +6,6 @@ export const MAIN_MENU: INavmenuItem[] = [
     href: '/dependent-integrals'
   },
   {
-    title: 'Основы',
-    href: '/dependent-integrals/basic'
-  },
-  {
     title: 'Сходимость',
     href: '/dependent-integrals/uniform-convergence',
     subMenu: [

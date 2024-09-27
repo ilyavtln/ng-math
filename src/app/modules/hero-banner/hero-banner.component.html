@@ -2,7 +2,7 @@
   <div class="hero-banner__container">
     <div class="hero-banner__content">
       @if (data.badges) {
-        <math-chip [chip]="data.badges"></math-chip>
+        <math-chip class="mb-2" [chip]="data.badges"></math-chip>
       }
 
       @if (data.title) {
@@ -18,7 +18,7 @@
       @if (data.anchors) {
         <div class="hero-banner__content-anchors mt-5">
           @for (anchor of data.anchors; track anchor.href) {
-            <a class="btn btn-secondary"
+            <a class="my-btn my-btn-primary"
               [routerLink]="anchor.href"
               [fragment]="anchor.fragment"
               [queryParams]="anchor.params">
