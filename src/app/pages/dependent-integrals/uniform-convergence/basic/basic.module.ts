@@ -7,6 +7,7 @@ import {MathjaxModule} from "mathjax-angular";
 import {LevelDirectiveModule} from "../../../../directives/level/level-directive.module";
 import {RemarkModule} from "../../../../modules/remark/remark.module";
 import {TheoremModule} from "../../../../modules/theorem/theorem.module";
+import {TooltipModule} from "../../../../modules/tooltip/tooltip.module";
 
 const ROUTES: Routes = [
   {
@@ -26,7 +27,8 @@ const ROUTES: Routes = [
     MathjaxModule,
     LevelDirectiveModule,
     RemarkModule,
-    TheoremModule
+    TheoremModule,
+    TooltipModule
   ]
 })
 export class BasicModule { }

@@ -8,10 +8,30 @@
   <div class="container">
     <div class="bg-primary-white p-3 rounded-4">
       <p>
-        Пусть функция <mathjax>{{ content.MATH_FUNC }}</mathjax> определена на множестве <mathjax>{{ content.MATH_X_MULTY }}</mathjax> <mathjax>{{ content.MATH_GAMMA }}</mathjax> и <mathjax>{{ content.MATH_X0 }}</mathjax> – некоторая предельная точка множества <mathjax>{{ content.MATH_X }}</mathjax>.
+        Пусть функция <mathjax>{{ content.MATH_FUNC }}</mathjax> определена на множестве <mathjax>{{ content.MATH_X_MULTY }}</mathjax>
+        <math-tooltip>
+          <div tooltipTrigger>
+            <mathjax>{{ content.MATH_GAMMA }}</mathjax>
+          </div>
+          <div tooltipContent>
+            <mathjax>{{ content.MATH_GAMMA }}</mathjax>
+            - произвольный промежуток (интервал, полуинтервал, отрезок, луч, числовая ось).
+          </div>
+        </math-tooltip>
+        и <mathjax>{{ content.MATH_X0 }}</mathjax> – некоторая предельная точка множества <mathjax>{{ content.MATH_X }}</mathjax>.
       </p>
       <p>
-        Функция <mathjax>{{ content.MATH_FUNC }}</mathjax> при <mathjax>{{ content.MATH_X_TO_X0 }}</mathjax> стремится к предельной функции <mathjax>{{ content.MATH_PHI }}</mathjax> равномерно относительно <mathjax>{{ content.MATH_GAMMA_SMALL }}</mathjax> в области <mathjax>{{ content.MATH_GAMMA }}</mathjax>, если
+        Функция <mathjax>{{ content.MATH_FUNC }}</mathjax> при <mathjax>{{ content.MATH_X_TO_X0 }}</mathjax> стремится к предельной функции <mathjax>{{ content.MATH_PHI }}</mathjax> равномерно относительно <mathjax>{{ content.MATH_GAMMA_SMALL }}</mathjax> в области
+        <math-tooltip>
+          <div tooltipTrigger>
+            <mathjax>{{ content.MATH_GAMMA }}</mathjax>
+          </div>
+          <div tooltipContent>
+            <mathjax>{{ content.MATH_GAMMA }}</mathjax>
+            - произвольный промежуток (интервал, полуинтервал, отрезок, луч, числовая ось).
+          </div>
+        </math-tooltip>
+        , если
       </p>
       <ol>
         <li class="mb-2" [mathjax]="content.MATH_LIM_1"></li>
@@ -23,13 +43,23 @@
       </math-remark>
       <math-theorem title="Теорема (Критерий равномерной сходимости Коши).">
         <p>
-          Для того чтобы функция  <mathjax>{{ content.MATH_FUNC }}</mathjax> при <mathjax>{{ content.MATH_X_TO_X0 }}</mathjax> имела предельную функцию и стремилась к ней равномерно относительно <mathjax>{{ content.MATH_GAMMA_SMALL }}</mathjax> в области <mathjax>{{ content.MATH_GAMMA }}</mathjax> достаточно, чтобы
+          Для того чтобы функция  <mathjax>{{ content.MATH_FUNC }}</mathjax> при <mathjax>{{ content.MATH_X_TO_X0 }}</mathjax> имела предельную функцию и стремилась к ней равномерно относительно <mathjax>{{ content.MATH_GAMMA_SMALL }}</mathjax> в области {{ content.MATH_GAMMA }} достаточно, чтобы
         </p>
         <p class="text-center" [mathjax]="content.THEOREM_1"></p>
       </math-theorem>
       <math-theorem title="Теорема (Критерий равномерной сходимости Гейне).">
         <p>
-          Для того чтобы функция  <mathjax>{{ content.MATH_FUNC }}</mathjax> при <mathjax>{{ content.MATH_X_TO_X0 }}</mathjax> стремилась к <mathjax>{{ content.PHI_OT_GAMMA }}</mathjax> равномерно относительно <mathjax>{{ content.MATH_GAMMA_SMALL }}</mathjax> в области <mathjax>{{ content.MATH_GAMMA }}</mathjax>, необходимо и достаточно, чтобы к <mathjax>{{ content.PHI_OT_GAMMA }}</mathjax> равномерно сходилась каждая ФП <mathjax>{{ content.MATH_FP }}</mathjax>, где <mathjax>{{ content.MATH_FP_XN }}</mathjax> – произвольная сходящаяся к <mathjax>{{ content.MATH_X0 }}</mathjax> последовательность.
+          Для того чтобы функция  <mathjax>{{ content.MATH_FUNC }}</mathjax> при <mathjax>{{ content.MATH_X_TO_X0 }}</mathjax> стремилась к <mathjax>{{ content.PHI_OT_GAMMA }}</mathjax> равномерно относительно <mathjax>{{ content.MATH_GAMMA_SMALL }}</mathjax> в области
+          <math-tooltip>
+            <div tooltipTrigger>
+              <mathjax>{{ content.MATH_GAMMA }}</mathjax>
+            </div>
+            <div tooltipContent>
+              <mathjax>{{ content.MATH_GAMMA }}</mathjax>
+              - произвольный промежуток (интервал, полуинтервал, отрезок, луч, числовая ось).
+            </div>
+          </math-tooltip>
+          , необходимо и достаточно, чтобы к <mathjax>{{ content.PHI_OT_GAMMA }}</mathjax> равномерно сходилась каждая ФП <mathjax>{{ content.MATH_FP }}</mathjax>, где <mathjax>{{ content.MATH_FP_XN }}</mathjax> – произвольная сходящаяся к <mathjax>{{ content.MATH_X0 }}</mathjax> последовательность.
         </p>
       </math-theorem>
     </div>

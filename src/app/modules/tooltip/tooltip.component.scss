@@ -1,0 +1,33 @@
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  cursor: help; /* Указываем, что элемент интерактивный */
+}
+
+.tooltip-title {
+  border-bottom: 2px dotted var(--primary-gray-active);
+}
+
+.tooltip-content {
+  position: absolute;
+  bottom: 100%; /* Расположите тултип над элементом */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(51, 51, 51, 0.9); /* Полупрозрачный фон */
+  color: #fff;
+  padding: 10px;
+  border-radius: 1rem;
+  width: 500px; /* Устанавливаем максимальную ширину контейнера */
+  white-space: normal; /* Позволяем переносу текста */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1000; /* Обеспечиваем, чтобы тултип был поверх других элементов */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для глубины */
+}
+
+
+.tooltip-container:hover .tooltip-content {
+  opacity: 1;
+  visibility: visible;
+}
