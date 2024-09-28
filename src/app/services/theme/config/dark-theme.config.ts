@@ -46,7 +46,7 @@ export const DARK_THEME = {
   "primary-dark-gray": "#000000",
 
   // Желтый
-  "primary-yellow-secondary": "#D4AC00",
+  "primary-yellow-secondary": "#8c6600",
   "primary-yellow-focus": "#FFEFAA",
   "primary-yellow-border": "#FEE680",
   "primary-yellow-hover": "#FED62B",
@@ -54,20 +54,20 @@ export const DARK_THEME = {
   "primary-yellow": "#FECE00",
 
   // Зеленый
-  "primary-green-secondary": "#005543",
+  "primary-green-secondary": "#00553b",
   "primary-green-focus": "#B5F6BB",
   "primary-green-border": "#90F199",
   "primary-green-hover": "#46E856",
-  "primary-green-active": "#1CBE2B",
-  "primary-green": "#21E434",
+  "primary-green-active": "#00261f",
+  "primary-green": "#004439",
 
   // Темно-зеленый
-  "primary-dark-green-secondary": "#238E2E",
+  "primary-dark-green-secondary": "#005543",
   "primary-dark-green-focus": "#B8E3BC",
   "primary-dark-green-border": "#94D49B",
   "primary-dark-green-hover": "#4EB858",
   "primary-dark-green-active": "#238E2E",
-  "primary-dark-green": "#2AAA37",
+  "primary-dark-green": "#00261f",
 
   // Дополнительно
   "footer": "#F6F6F6",
