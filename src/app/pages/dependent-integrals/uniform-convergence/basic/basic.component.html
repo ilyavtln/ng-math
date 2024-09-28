@@ -14,9 +14,24 @@
         Функция <mathjax>{{ content.MATH_FUNC }}</mathjax> при <mathjax>{{ content.MATH_X_TO_X0 }}</mathjax> стремится к предельной функции <mathjax>{{ content.MATH_PHI }}</mathjax> равномерно относительно <mathjax>{{ content.MATH_GAMMA_SMALL }}</mathjax> в области <mathjax>{{ content.MATH_GAMMA }}</mathjax>, если
       </p>
       <ol>
-        <li [mathjax]="content.MATH_LIM_1"></li>
+        <li class="mb-2" [mathjax]="content.MATH_LIM_1"></li>
         <li [mathjax]="content.MATH_LIM_2"></li>
       </ol>
+      <math-remark title="Замечание" >
+        <p>Второе условие эквивалентно тому, что</p>
+        <p class="text-center" [mathjax]="content.REMARK_1"></p>
+      </math-remark>
+      <math-theorem title="Теорема (Критерий равномерной сходимости Коши).">
+        <p>
+          Для того чтобы функция  <mathjax>{{ content.MATH_FUNC }}</mathjax> при <mathjax>{{ content.MATH_X_TO_X0 }}</mathjax> имела предельную функцию и стремилась к ней равномерно относительно <mathjax>{{ content.MATH_GAMMA_SMALL }}</mathjax> в области <mathjax>{{ content.MATH_GAMMA }}</mathjax> достаточно, чтобы
+        </p>
+        <p class="text-center" [mathjax]="content.THEOREM_1"></p>
+      </math-theorem>
+      <math-theorem title="Теорема (Критерий равномерной сходимости Гейне).">
+        <p>
+          Для того чтобы функция  <mathjax>{{ content.MATH_FUNC }}</mathjax> при <mathjax>{{ content.MATH_X_TO_X0 }}</mathjax> стремилась к <mathjax>{{ content.PHI_OT_GAMMA }}</mathjax> равномерно относительно <mathjax>{{ content.MATH_GAMMA_SMALL }}</mathjax> в области <mathjax>{{ content.MATH_GAMMA }}</mathjax>, необходимо и достаточно, чтобы к <mathjax>{{ content.PHI_OT_GAMMA }}</mathjax> равномерно сходилась каждая ФП <mathjax>{{ content.MATH_FP }}</mathjax>, где <mathjax>{{ content.MATH_FP_XN }}</mathjax> – произвольная сходящаяся к <mathjax>{{ content.MATH_X0 }}</mathjax> последовательность.
+        </p>
+      </math-theorem>
     </div>
   </div>
 </section>

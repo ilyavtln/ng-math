@@ -1,16 +1,18 @@
 @if (!isHomePage) {
-  <section class="page-section">
-    <div class="container">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a routerLink="/">Главная</a>
-        </li>
-        <li *ngFor="let breadcrumb of breadcrumbs">
-          <span [routerLink]="breadcrumb.url" routerLinkActive="router-link-active">
-            {{ breadcrumb.label }}
-          </span>
-        </li>
-      </ol>
-    </div>
-  </section>
+  <div class="container">
+    <ol class="breadcrumb d-flex gap-1">
+      <li class="d-flex">
+        <a routerLink="/">Главная</a>
+        <span class="breadcrumb__separator d-flex align-items-center"><img src="default-icons/chevron-right.svg"></span>
+      </li>
+      <li class="d-flex" *ngFor="let breadcrumb of breadcrumbs; last as isLast">
+        <a [routerLink]="breadcrumb.url" routerLinkActive="breadcrumb-active">
+          {{ breadcrumb.label }}
+        </a>
+        @if (!isLast) {
+          <span class="breadcrumb__separator d-flex align-items-center"><img src="default-icons/chevron-right.svg"></span>
+        }
+      </li>
+    </ol>
+  </div>
 }

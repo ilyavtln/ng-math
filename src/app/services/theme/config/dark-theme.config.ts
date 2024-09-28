@@ -54,7 +54,7 @@ export const DARK_THEME = {
   "primary-yellow": "#FECE00",
 
   // Зеленый
-  "primary-green-secondary": "#D3FAD6",
+  "primary-green-secondary": "#005543",
   "primary-green-focus": "#B5F6BB",
   "primary-green-border": "#90F199",
   "primary-green-hover": "#46E856",
