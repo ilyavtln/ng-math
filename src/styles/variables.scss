@@ -88,27 +88,24 @@ $colors: (
 // Стили для заднего фона и текста
 @each $name, $value in $colors {
   .bg-#{$name} {
-    background: var(--#{$name}); // Используйте CSS-переменные
+    background: var(--#{$name});
   }
 
   .text-#{$name} {
-    color: var(--#{$name}); // Используйте CSS-переменные
+    color: var(--#{$name});
   }
 }
 
 $button-states: (
-  "hover": 0.1, // Увеличиваем яркость цвета на 10%
-  "active": 0.2, // Увеличиваем яркость цвета на 20%
-  "focus": 0.1 // Увеличиваем яркость цвета на 10%
+  "hover": 0.1,
+  "active": 0.2,
+  "focus": 0.1
 );
 
-// Функция для затемнения цвета
 @function darken($color, $amount) {
   @return rgba($color, 1 - $amount);
 }
 
-
-// Генерация классов для каждой кнопки
 @each $name, $value in $colors {
   @include button($name);
 }
