@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TooltipComponent } from './tooltip.component';
-import {MathjaxModule} from "mathjax-angular";
 
 
 
@@ -13,8 +12,7 @@ import {MathjaxModule} from "mathjax-angular";
     TooltipComponent
   ],
   imports: [
-    CommonModule,
-    MathjaxModule
+    CommonModule
   ]
 })
 export class TooltipModule { }

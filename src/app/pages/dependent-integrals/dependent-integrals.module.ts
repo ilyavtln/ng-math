@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DependentIntegralsComponent } from './dependent-integrals.component';
 import {RouterModule, Routes} from "@angular/router";
-import {MathjaxModule} from "mathjax-angular";
 
 const ROUTES: Routes = [
   {
@@ -42,8 +41,7 @@ const ROUTES: Routes = [
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild(ROUTES),
-    MathjaxModule,
+    RouterModule.forChild(ROUTES)
   ]
 })
 export class DependentIntegralsModule { }

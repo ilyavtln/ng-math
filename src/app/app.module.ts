@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './routing/app-routing.module';
 import { AppComponent } from './app.component';
 import { provideHttpClient } from "@angular/common/http";
-import { MathjaxModule } from "mathjax-angular";
 
 @NgModule({
   declarations: [
@@ -11,8 +10,7 @@ import { MathjaxModule } from "mathjax-angular";
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    MathjaxModule.forRoot(),
+    AppRoutingModule
   ],
   providers: [provideHttpClient()],
   exports: [

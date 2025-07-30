@@ -1,4 +1,4 @@
-@import "mixins/breakpoints";
+@use "mixins/breakpoints" as *;
 
 .banner-wrapper {
   &__two {

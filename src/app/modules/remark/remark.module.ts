@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RemarkComponent } from './remark.component';
-import {MathjaxModule} from "mathjax-angular";
 
 
 
@@ -13,8 +12,7 @@ import {MathjaxModule} from "mathjax-angular";
     RemarkComponent
   ],
   imports: [
-    CommonModule,
-    MathjaxModule
+    CommonModule
   ]
 })
 export class RemarkModule { }

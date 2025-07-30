@@ -1,4 +1,4 @@
-@import "src/styles/mixins/_breakpoints.scss";
+@use "src/styles/mixins/_breakpoints.scss" as *;
 
 .hero-banner {
   &__container {

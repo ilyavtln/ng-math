@@ -8,9 +8,9 @@
   <div class="container bg-primary-white p-3 p-md-4 p-lg-5 rounded-4">
     <h2 class="mb-3 mb-lg-4">Доступные курсы</h2>
     <div class="d-grid banner-wrapper__two gap-3 gap-md-4 gap-lg-5">
-      <ng-container *ngFor="let banner of content.COURSE_BANNERS">
+      @for (banner of content.COURSE_BANNERS; track banner) {
         <math-course-banner [data]="banner"></math-course-banner>
-      </ng-container>
+      }
     </div>
   </div>
 </section>

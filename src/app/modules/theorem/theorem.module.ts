@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TheoremComponent } from './theorem.component';
-import {MathjaxModule} from "mathjax-angular";
 
 
 
@@ -13,8 +12,7 @@ import {MathjaxModule} from "mathjax-angular";
     TheoremComponent
   ],
   imports: [
-    CommonModule,
-    MathjaxModule
+    CommonModule
   ]
 })
 export class TheoremModule { }

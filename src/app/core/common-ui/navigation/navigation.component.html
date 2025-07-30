@@ -5,11 +5,11 @@
         <li class="nav-item">
           <a routerLink="/"><img src="favicon.ico" class="nav-logo" alt=""></a>
         </li>
-        <ng-container *ngFor="let item of config; let i = index">
+        @for (item of config; track item; let i = $index) {
           <li class="nav-item">
             <a [routerLink]="item.anchor.href" class="nav-link" [innerHTML]="item.title"></a>
           </li>
-        </ng-container>
+        }
       </ul>
       <math-theme-toggler></math-theme-toggler>
     </nav>
