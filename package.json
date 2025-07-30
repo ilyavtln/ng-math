@@ -22,6 +22,7 @@
     "@angular/router": "^19.2.14",
     "bootstrap": "^5.3.3",
     "mathjax": "4.0.0-beta.6",
+    "mathjax-angular": "^3.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.1"
