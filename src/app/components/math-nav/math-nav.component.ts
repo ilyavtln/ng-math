@@ -4,9 +4,10 @@ import { INavmenuItem } from 'src/app/core/interfaces/navmenuItem.interface';
 import { LevelService } from '../../services/level/level.service';
 
 @Component({
-  selector: 'math-nav',
-  templateUrl: './math-nav.component.html',
-  styleUrls: ['./math-nav.component.scss']
+    selector: 'math-nav',
+    templateUrl: './math-nav.component.html',
+    styleUrls: ['./math-nav.component.scss'],
+    standalone: false
 })
 export class MathNavComponent {
   readonly content = content;

@@ -3,9 +3,10 @@ import { Router, Event, NavigationEnd } from '@angular/router';
 import { ViewportScroller } from '@angular/common';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss',
+    standalone: false
 })
 export class AppComponent implements OnInit {
   title = 'ng-math';

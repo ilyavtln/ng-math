@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'math-application',
-  templateUrl: './application.component.html',
-  styleUrl: './application.component.scss'
+    selector: 'math-application',
+    templateUrl: './application.component.html',
+    styleUrl: './application.component.scss',
+    standalone: false
 })
 export class ApplicationComponent {
 

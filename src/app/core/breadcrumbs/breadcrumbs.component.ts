@@ -8,9 +8,10 @@ interface IBreadCrumb {
 }
 
 @Component({
-  selector: 'math-breadcrumbs',
-  templateUrl: './breadcrumbs.component.html',
-  styleUrls: ['./breadcrumbs.component.scss']
+    selector: 'math-breadcrumbs',
+    templateUrl: './breadcrumbs.component.html',
+    styleUrls: ['./breadcrumbs.component.scss'],
+    standalone: false
 })
 
 export class BreadcrumbsComponent implements OnInit {

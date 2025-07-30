@@ -2,7 +2,8 @@ import { Directive, ElementRef, Input, OnInit } from '@angular/core';
 import { LevelService } from '../../services/level/level.service';
 
 @Directive({
-  selector: '[mathLevel]'
+    selector: '[mathLevel]',
+    standalone: false
 })
 export class LevelDirective implements OnInit {
   @Input('mathLevel') levelClass!: string; // Принимает уровень видимости для элемента

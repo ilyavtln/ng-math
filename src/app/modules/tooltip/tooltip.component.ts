@@ -1,9 +1,10 @@
 import { Component, HostListener } from '@angular/core';
 
 @Component({
-  selector: 'math-tooltip',
-  templateUrl: './tooltip.component.html',
-  styleUrls: ['./tooltip.component.scss']
+    selector: 'math-tooltip',
+    templateUrl: './tooltip.component.html',
+    styleUrls: ['./tooltip.component.scss'],
+    standalone: false
 })
 export class TooltipComponent {
   isTooltipVisible = false;

@@ -3,9 +3,10 @@ import { ThemeService } from "../../services/theme/theme.service";
 import {MatSlideToggleChange} from "@angular/material/slide-toggle";
 
 @Component({
-  selector: 'math-theme-toggler',
-  templateUrl: './theme-toggler.component.html',
-  styleUrls: ['./theme-toggler.component.scss']
+    selector: 'math-theme-toggler',
+    templateUrl: './theme-toggler.component.html',
+    styleUrls: ['./theme-toggler.component.scss'],
+    standalone: false
 })
 export class ThemeTogglerComponent implements OnInit {
   isDarkTheme = false;

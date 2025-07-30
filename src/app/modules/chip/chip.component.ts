@@ -3,9 +3,10 @@ import {IHeroBanner} from "../../core/interfaces/hero-banner.interface";
 import {IBadge} from "../../core/interfaces/badge.interface";
 
 @Component({
-  selector: 'math-chip',
-  templateUrl: './chip.component.html',
-  styleUrl: './chip.component.scss'
+    selector: 'math-chip',
+    templateUrl: './chip.component.html',
+    styleUrl: './chip.component.scss',
+    standalone: false
 })
 export class ChipComponent {
   @Input() chip!: IBadge;

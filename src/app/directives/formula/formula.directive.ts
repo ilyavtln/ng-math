@@ -1,7 +1,8 @@
 import {AfterViewInit, Directive, ElementRef, Input, OnInit, Renderer2} from '@angular/core';
 
 @Directive({
-  selector: '[mathFormula]'
+    selector: '[mathFormula]',
+    standalone: false
 })
 export class FormulaDirective implements AfterViewInit {
   @Input('mathFormula') inputText: string = '';
